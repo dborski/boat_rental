@@ -48,6 +48,8 @@ class Dock
   end
 
   def revenue
+    require "pry"; binding.pry
+
     #Revenue only caluclates when all boats are returned
     #It is a running total of all revenue collected
     @total_revenue
