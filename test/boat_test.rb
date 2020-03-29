@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/boat'
-require './lib/renter'
+# require './lib/renter'
 
 class BoatTest < Minitest::Test
 
@@ -31,21 +31,3 @@ class BoatTest < Minitest::Test
     assert_equal 3, @kayak.hours_rented
   end
 end
-
-
-
-
-# ## Iteration 1
-#
-# Use TDD to create a `Boat` and a `Renter` class that respond to the following interaction pattern:
-
-
-
-# renter = Renter.new("Patrick Star", "4242424242424242")
-# # => #<Renter:0x00007fb5ef98b118...>
-#
-# renter.name
-# # => "Patrick Star"
-#
-# renter.credit_card_number
-# # => "4242424242424242"
