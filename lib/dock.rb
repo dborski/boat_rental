@@ -18,4 +18,12 @@ class Dock
     end
     categorized_rentals
   end
+
+  def total_charge(boat)
+    if boat.hours_rented > max_rental_time
+       max_rental_time * boat.price_per_hour
+    else
+      boat.hours_rented * boat.price_per_hour
+    end
+  end
 end
