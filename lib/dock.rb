@@ -26,4 +26,8 @@ class Dock
       boat.hours_rented * boat.price_per_hour
     end
   end
+
+  def charge(boat)
+    Hash[card_number: rental_log[boat].credit_card_number, amount: total_charge(boat)]
+  end
 end
